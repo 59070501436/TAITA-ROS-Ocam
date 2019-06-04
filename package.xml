@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>TAITA_Ocam</name>
+  <name>TAITA_ROS_Ocam</name>
   <version>0.0.0</version>
-  <description>The TAITA_Ocam package</description>
+  <description>The TAITA_ROS_Ocam package</description>
 
   <maintainer email="punyapat.areerob@mail.kmutt.ac.th">TAI</maintainer>
 
