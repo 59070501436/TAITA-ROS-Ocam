@@ -43,7 +43,7 @@ class OCamInterface(object):
 
         # Camera setting reassign (?)
         for i in range(len(self.camera_format_list)):
-            self.camera.Set(self.camera_format_list[i])
+            self.camera.Set(self.camera_format_list[1])
 
         self.camera_name = self.camera.GetName()
         rospy.loginfo("Currently Connecting to Camera : " + str(self.camera_name))
@@ -75,7 +75,6 @@ class OCamInterface(object):
         camera_mat = self.camera.GetFrame()
         rgb = cv2.cvtColor(camera_mat, cv2.COLOR_BayerGB2BGR)
         return rgb
-
 
 class ImageConverter(object):
     """Class for converting OpenCv's Mat into
